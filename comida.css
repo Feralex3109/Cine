@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.header {
+  background-color: black;
+}
+.card {
+  border: 1px solid rgba(212, 206, 206, 0.438);  
+}
+.card img {
+  border-radius: 2%;
+}
+p .card-text {
+  margin: 2px;
+  font-size: 12px;
+}
+.carousel-item img{
+  height: 600px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+}
+
+.card-img-top {
+  height: 40vh;
+  transition: transform .6s;
+}
+
+.card-img-top:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.card {
+  border: 1px solid rgba(212, 206, 206, 0.438);
+  transition: transform .6s;
+  box-shadow: 0 0 3px rgba(124, 119, 119, 0.329);  
+}
+
+.card:hover {
+  box-shadow: 0 0 30px rgba(39, 37, 37, 0.329);
+  transition: transform .6s;
+
+}
+
+

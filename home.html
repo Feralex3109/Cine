@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" type="imagen/x-icon" href="./img/camera-reels-fill.svg">
+
+
+  <title>Cine Bit</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="row">
+    <div class="col-md-12 header space-between">
+      <nav class="navbar navbar-expand-lg fixed-top header">
+        <div class="container-fluid">
+          <!-- Navegación izquierda -->
+          <a class="navbar-brand text-white fs-1 fw-bold" href="./home.html">Cine Bit</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="divNav collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><button type="button" id="btnCartelera"
+                  class="btn btn-outline-light mx-1">Cartelera</button></li>
+              <li class="nav-item"><button type="button" id="btnProximo" class="btn btn-outline-light mx-1">Próximos
+                  Estrenos</button></li>
+              <li class="nav-item"><button type="button" id="btnComidas"
+                  class="btn btn-outline-light mx-1">Comidas</button></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Accion</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Comedia</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Romantica</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Aventuras</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Ciencia Ficción</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">No- Ficción / documental</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Fantasía</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Musical</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Drama</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Terror</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </ul>
+            <!-- Fin navegación izquierda -->
+
+            <!-- Navegación derecha -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success me-2" type="submit">Search</button>
+
+            </form>
+
+            <!-- Log Out -->
+            <div class="logOut d-none" id="logOut">
+
+              <button class="btn btn-outline-danger me-2" type="submit" id="btnLogOut">LogOut</button>
+              <button class="btnUser"><img src="../11-24-22 grupo de trabajo/img/iconoPerfil.png" alt=""><span
+                  id="userNameIcon"></span>
+              </button>
+            </div>
+            <!-- Fin del Log Out  -->
+            <div class="ingresar" id="ingresar">
+              <button class="btn btn-success me-2" type="submit">Ingresar</button>
+            </div>
+
+
+            <!-- Fin navegación derecha -->
+
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Fin del header -->
+
+    <!-- Inicio Carrusel -->
+
+    <div class="my-5"></div>
+    <div class="text-center">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-4 my-5">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner justify-content-center">
+              <div class="carousel-item active">
+                <img src="./img/blindspot_3.jpg_606861996.webp" class="d-block w-100" class="d-block w-100" alt="..." />
+
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/black.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item                ">
+                <img src="./img/dadpool.jpg" class="d-block w-100" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third
+                    slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fin del Carrusel -->
+
+  <!-- Footer -->
+
+  <footer class="text-white text-center text-lg-start mt-5" style="background-color: #23242a">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Acerca de Nosotros</h5>
+
+                <p>
+                    Cine Bit es una empresa de exhibición y distribución de cine en Colombia con sede en Bogotá. Es una empresa de capital privado colombiano en su mayoría perteneciente al Grupo Colombia.
+                </p>
+
+                <div class="mt-4">
+                    <!-- Facebook -->
+                    <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                            class="fab fa-facebook-f" ></i></a>
+                    <!-- Dribbble -->
+                    <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                            class="fab fa-dribbble"></i></a>
+                    <!-- Twitter -->
+                    <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                            class="fab fa-twitter"></i></a>
+                    <!-- Google + -->
+                    <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                            class="fab fa-google-plus-g"></i></a>
+                    <!-- Linkedin -->
+                </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+                <ul class="fa-ul" style="margin-left: 1.65em">
+                    <li class="mb-3">
+                        <span class="fa-li"><i class="fa-regular fa-message"></i></span><span><a href="./contacto.html">Contactanos</a></span>
+                    </li>
+                    <li class="mb-3">
+                        <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Colombia
+                            US</span>
+                    </li>
+                    <li class="mb-3">
+                        <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                            class="ms-2">cinebit@bootcamp.com</span>
+                    </li>
+                    <li class="mb-3">
+                        <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567
+                            88</span>
+                    </li>
+                    <li class="mb-3">
+                        <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567
+                            89</span>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Horario de Atencio</h5>
+
+                <table class="table text-center text-white">
+                    <tbody class="font-weight-normal">
+                        <tr>
+                            <td>Mon - Thu:</td>
+                            <td>8am - 9pm</td>
+                        </tr>
+                        <tr>
+                            <td>Fri - Sat:</td>
+                            <td>8am - 1am</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday:</td>
+                            <td>9am - 10pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+  <!-- End of .container -->
+
+
+
+
+  <!-- scripts -->
+  <script src="./scr/script.js"></script>
+  <script src="./scr/boton.js"></script>
+  <script src="./scr/home.js"></script>
+  <script src="https://kit.fontawesome.com/a494d3ab4b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

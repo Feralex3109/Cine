@@ -1,0 +1,62 @@
+* {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.card-img-top {
+    width: 450px;
+    height: 500px;        
+    cursor: pointer;   
+}
+
+.retroceder {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;   
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: white;        
+       
+}
+
+.containerInputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInputs input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: #f4f4f4;
+    margin: 0 20px;
+}
+
+.compraBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 25px;    
+    border-radius: 10px;       
+    cursor: pointer;
+}
+
+.btn {
+    color: red;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container-producto {
+    display: flex;
+    flex-direction: column;
+}

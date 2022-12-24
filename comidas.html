@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./comida.css" />
+  <link rel="icon" type="imagen/x-icon" href="./img/camera-reels-fill.svg">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="row">
+    <div class="col-md-12 space-between">
+      <nav class="navbar navbar-expand-lg fixed-top header">
+        <div class="container-fluid">
+          <!-- Navegación izquierda -->
+          <a class="navbar-brand text-white fs-1 fw-bold" href="./home.html">Cine Bit</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="divNav collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><button type="button" id="btnCartelera"
+                  class="btn btn-outline-light mx-2">Cartelera</button></li>
+              <li class="nav-item mx-2"><button type="button" id="btnProximo" class="btn btn-outline-light">Próximos
+                  Estrenos</button></li>
+              <li class="nav-item mx-2"><button type="button" id="btnComidas"
+                  class="btn btn-outline-light">Comidas</button></li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-dark" href="#">Accion</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">Comedia</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">Romantica</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">Aventuras</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">Ciencia Ficción</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">No- Ficción / documental</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">Fantasía</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">Musical</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">Drama</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">Terror</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+            </ul>
+            <!-- Fin navegación izquierda -->
+
+            <!-- Navegación derecha -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success me-2" type="submit">Search</button>
+
+            </form>
+
+            <!-- Log Out -->
+            <div class="logOut d-none" id="logOut">
+
+              <button class="btn btn-outline-danger me-2" type="submit" id="btnLogOut">Log Out</button>
+              <button class="btnUser"><img src="../11-24-22 grupo de trabajo/img/iconoPerfil.png" alt=""><span
+                  id="userNameIcon"></span>
+              </button>
+            </div>
+            <!-- Fin del Log Out  -->
+            <div class="ingresar " id="ingresar">
+              <button class="btn btn-success me-2" type="submit">Ingresar</button>
+            </div>
+
+
+            <!-- Fin navegación derecha -->
+
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Fin del header -->
+
+
+
+    <!-- Inicio de los cards -->
+    <div class="my-5"></div>
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <h2 class="my-4">COMIDAS</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+             
+            <div class="col-sm-8">
+              <div class="card p-3 bg-white rounded border-opacity-10">
+                <a href="./nachos.html">
+                <img src="./img/comidas/Nachos.jpg" class="card-img-top h-25" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">Paquete de nachos 60 g</h5>
+                  <p class="card-text">Paquete de nachos 60 g</p>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col">
+              <div class="card p-3 bg-white rounded">
+                <img src="./img/comidas/NachosChedar.jpg" class="card-img-top h-25" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nachos con queso cheddar</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 pb-0 bg-white rounded">
+                <img src="./img/comidas/AdicionQueso.jpg" class="card-img-top h-25" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><br>Adición Queso cheddar</h5>
+                  <p class="card-text">Porción queso cheddar 85 g</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 bg-white rounded">
+                <img src="./img/comidas/PerroCaliente.jpg" class="card-img-top h-25" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><br><br><br>Perro Caliente</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 pb-0 bg-white rounded">
+                <img src="./img/comidas/ComboTuyYo.png" class="card-img-top h-25" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title"><br>Combo Tu y Yo</h5>
+                  <p class="card-text">
+                    2 Bebidas Familiar y 2 Perros Calientes
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 pb-0 bg-white rounded">
+                <img src="./img/comidas/ComboDuo.png" class="card-img-top h-25" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Combo Duo</h5>
+                  <p class="card-text">1 Crispeta Familiar y 2 Bebidas</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 pb-0 bg-white rounded">
+                <img src="./img/comidas/ComboFamiliar.webp" class="card-img-top h-25" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Combo Familiar</h5>
+                  <p class="card-text">
+                    1 Crispeta Familiar con Mantequilla y 1 con Caramelo, 2
+                    Bebidas Personal, 1 Perro Caliente y 2 Paquetes de Nachos
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 pb-0 bg-white rounded">
+                <img src="./img/comidas/ComboPersonal.jpeg" class="card-img-top h-25" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Combo Personal</h5>
+                  <p class="card-text">
+                    1 Bebida Personal, 1 Crispetas y 1 Perro Caliente
+                  </p>
+                </div>
+              </div>
+            </div>            
+            <div class="col">              
+              <div class="card p-3 pb-0 bg-white rounded">
+                <a href="./img/comidas/ComboInfantil.png">                
+                <img src="./img/comidas/ComboInfantil.png" class="card-img-top h-25" alt="..." /></a>
+                <div class="card-body">
+                  <h5 class="card-title">Combo Infantil</h5>
+                  <p class="card-text">
+                    1 Bebida Pequeña, 1 Crispetas Pequeña y 1 Chocolatina Jet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-2"></div>
+      </div>
+    </div>
+
+    <footer class="text-white text-center text-lg-start mt-5" style="background-color: #23242a">
+      <!-- Grid container -->
+      <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-4">Acerca de Nosotros</h5>
+
+                  <p>
+                      Cine Bit es una empresa de exhibición y distribución de cine en Colombia con sede en Bogotá. Es una empresa de capital privado colombiano en su mayoría perteneciente al Grupo Colombia.
+                  </p>
+
+                  <div class="mt-4">
+                      <!-- Facebook -->
+                      <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                              class="fab fa-facebook-f" ></i></a>
+                      <!-- Dribbble -->
+                      <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                              class="fab fa-dribbble"></i></a>
+                      <!-- Twitter -->
+                      <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                              class="fab fa-twitter"></i></a>
+                      <!-- Google + -->
+                      <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                              class="fab fa-google-plus-g"></i></a>
+                      <!-- Linkedin -->
+                  </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+                  <ul class="fa-ul" style="margin-left: 1.65em">
+                      <li class="mb-3">
+                          <span class="fa-li"><i class="fa-regular fa-message"></i></span><span><a href="./contacto.html">Contactanos</a></span>
+                      </li>
+                      <li class="mb-3">
+                          <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Colombia
+                              US</span>
+                      </li>
+                      <li class="mb-3">
+                          <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                              class="ms-2">cinebit@bootcamp.com</span>
+                      </li>
+                      <li class="mb-3">
+                          <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567
+                              88</span>
+                      </li>
+                      <li class="mb-3">
+                          <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567
+                              89</span>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-4">Horario de Atencio</h5>
+
+                  <table class="table text-center text-white">
+                      <tbody class="font-weight-normal">
+                          <tr>
+                              <td>Mon - Thu:</td>
+                              <td>8am - 9pm</td>
+                          </tr>
+                          <tr>
+                              <td>Fri - Sat:</td>
+                              <td>8am - 1am</td>
+                          </tr>
+                          <tr>
+                              <td>Sunday:</td>
+                              <td>9am - 10pm</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <!--Grid column-->
+          </div>
+          <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+
+    <!-- End of .container -->
+
+    <!-- scripts -->
+    <script src="./scr/home.js"></script>
+    <script src="./scr/boton.js"></script>
+    <script src="https://kit.fontawesome.com/a494d3ab4b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

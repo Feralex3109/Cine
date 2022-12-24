@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./contacto.css">
+  <link rel="icon" type="imagen/x-icon" href="./img/camera-reels-fill.svg">
+
+
+
+  <title>Cine Bit</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="row justify-content-center">
+    <div class="col-md-12 header space-between">
+      <nav class="navbar navbar-expand-lg fixed-top header">
+        <div class="container-fluid">
+          <!-- Navegación izquierda -->
+          <a class="navbar-brand text-white fs-1 fw-bold" href="./home.html">Cine Bit</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="divNav collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><button type="button" id="btnCartelera"
+                  class="btn btn-outline-light mx-1">Cartelera</button></li>
+              <li class="nav-item"><button type="button" id="btnProximo" class="btn btn-outline-light mx-1">Próximos
+                  Estrenos</button></li>
+              <li class="nav-item"><button type="button" id="btnComidas"
+                  class="btn btn-outline-light mx-1">Comidas</button></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+            </ul>
+            <!-- Fin navegación izquierda -->
+
+            <!-- Navegación derecha -->
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+              <button class="btn btn-outline-success me-2" type="submit">buscar</button>
+            </form>
+
+            <!-- Log Out -->
+            <div class="logOut d-none" id="logOut">
+
+              <button class="btn btn-outline-danger me-2" type="submit" id="btnLogOut">LogOut</button>
+              <button class="btnUser"><img src="../11-24-22 grupo de trabajo/img/iconoPerfil.png" alt=""><span
+                  id="userNameIcon"></span>
+              </button>
+            </div>
+            <!-- Fin del Log Out  -->
+            <div class="ingresar" id="ingresar">
+              <button class="btn btn-success me-2" type="submit">Ingresar</button>
+            </div>
+
+
+            <!-- Fin navegación derecha -->
+
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Fin del header -->
+
+    <!-- formulario de contacto en html y css -->
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <div class="contact_form ">
+
+            <div class="formulario my-5">
+              <h1>Formulario de contacto</h1>
+              <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+      
+      
+              <form action="submeter-formulario.php" method="post">
+      
+      
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                  <input class="input" type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                    placeholder="Escribe tu nombre">
+                </p>
+      
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                  <input class="input" type="email" name="introducir_email" id="email" required="obligatorio"
+                    placeholder="Escribe tu Email">
+                </p>
+      
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                  <input class="input" type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>
+      
+                <p>
+                  <label for="website" class="colocar_website">Sitio web
+                  </label>
+                  <input class="input" type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                </p>
+      
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                  <input class="input " type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                    placeholder="Escribe un asunto">
+                </p>
+      
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>
+                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                    placeholder="Deja aquí tu comentario..."></textarea>
+                </p>
+      
+                <button class="button" type="submit" name="enviar_formulario" id="enviar">
+                  <p>Enviar</p>
+                </button>
+      
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="text-white text-center text-lg-start mt-5" style="background-color: #23242a">
+      <!-- Grid container -->
+      <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-4">Acerca de Nosotros</h5>
+
+                  <p class="parraf">
+                      Cine Bit es una empresa de exhibición y distribución de cine en Colombia con sede en Bogotá. Es una empresa de capital privado colombiano en su mayoría perteneciente al Grupo Colombia.
+                  </p>
+
+                  <div class="mt-4">
+                      <!-- Facebook -->
+                      <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                              class="fab fa-facebook-f" ></i></a>
+                      <!-- Dribbble -->
+                      <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                              class="fab fa-dribbble"></i></a>
+                      <!-- Twitter -->
+                      <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                              class="fab fa-twitter"></i></a>
+                      <!-- Google + -->
+                      <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                              class="fab fa-google-plus-g"></i></a>
+                      <!-- Linkedin -->
+                  </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+                  <ul class="fa-ul" style="margin-left: 1.65em">
+                      <li class="mb-3">
+                          <span class="fa-li"><i class="fa-regular fa-message"></i></span><span><a href="./contacto.html">Contactanos</a></span>
+                      </li>
+                      <li class="mb-3">
+                          <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Colombia
+                              US</span>
+                      </li>
+                      <li class="mb-3">
+                          <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                              class="ms-2">cinebit@bootcamp.com</span>
+                      </li>
+                      <li class="mb-3">
+                          <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567
+                              88</span>
+                      </li>
+                      <li class="mb-3">
+                          <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567
+                              89</span>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-4">Horario de Atencio</h5>
+
+                  <table class="table text-center text-white">
+                      <tbody class="font-weight-normal">
+                          <tr>
+                              <td>Mon - Thu:</td>
+                              <td>8am - 9pm</td>
+                          </tr>
+                          <tr>
+                              <td>Fri - Sat:</td>
+                              <td>8am - 1am</td>
+                          </tr>
+                          <tr>
+                              <td>Sunday:</td>
+                              <td>9am - 10pm</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <!--Grid column-->
+          </div>
+          <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+
+    <!-- End of .container -->
+
+
+
+
+    <!-- scripts -->
+    <script src="./scr/script.js"></script>
+    <script src="./scr/boton.js"></script>
+    <script src="./scr/home.js"></script>
+    <script src="https://kit.fontawesome.com/a494d3ab4b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script> 
+</body>
+
+</html>
